@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/authPage.css">
+    
+</head>
+<body>
+    <div class="containerLogIn">
+        <form action="">
+            <div class="block title">
+                <span>Вход</span>
+                <a href="regPage.html">Нет аккаунта? Зарегистрируйтесь!</a>
+            </div>
+            <div class="block email">
+                <label for="emailInp">Почта</label>
+                <input required type="email" name="emailInp" id="" placeholder="Введите адрес электронной почты"> 
+            </div>
+            <div class="block password">
+                <label for="passwordInp">Пароль</label>
+                <div class="passwordIcon">
+                    <input required type="password" name="passwordInp" id="password-input" placeholder="Введите пароль"> 
+                    <i class="far fa-eye password-control" onclick="return show_hide_password(this);"></i> 
+                </div> 
+            </div>
+            <div class="block buttonLine">
+                <a href="update.html">Забыли пароль?</a>
+                <input type="submit" value="Войти">
+            </div>
+        </form>
+        
+    </div>
+    <script>
+        function show_hide_password(target){
+            var input = document.getElementById('password-input');
+            if (input.getAttribute('type') == 'password') {
+                target.className = 'fas fa-eye-slash password-control';
+                input.setAttribute('type', 'text');
+            } else {
+                target.className = 'fas fa-eye password-control';
+                input.setAttribute('type', 'password');
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

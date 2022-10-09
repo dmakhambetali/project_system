@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    max-width: 100vw;
+    background-image: url(https://app.polaranalytics.com/img/bg-login.svg);
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+}
+.containerLogIn{
+    width: 40%;
+    height: 50%;
+    margin: auto;
+  
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 20px;
+    display: block;
+}
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+form a{
+    color:#4d42fe;
+    
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+form a:nth-child(1){
+    margin: 0 0 auto auto;
+}
+form a:nth-child(2){
+    margin: auto;
+    margin-top: 2%;
+}
+form a:hover{
+    color:#5a50fe;
+    text-decoration:underline;
+}
+.block.buttonLine{
+    width: 100%;
+    height: 30%;
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+.block.buttonLine input{
+    background-color: #5a50fe;
+        font-family: Poppins,sans-serif;
+        color: #fff;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        width: 40%;
+       border: none;
+       padding: 7px 20px;
+       margin: auto;
+       border-radius: 10px;
+    
+}
+.block{
+   
+    display: flex;
+    flex-direction: column;
+}
+.block.title{
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    color: #2f299c;
+    font-weight: 400;
+    
+}
+.block.title span{
+    font-size: 40px;
+}
+.block.email, .block.password{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.block.email input, .block.password input{
+    outline: none;
+    border:1px solid #8f8e99 ;
+    border-radius:5px ;
+    padding: 10px 20px;
+}
+.block.email label, .block.password label{
+    font-size: 20px;
+    font-weight: 80px;
+    color: #393941;
+}
+.block.password{
+    
+}
+.password .passwordIcon{
+  
+}
+.passwordIcon input{
+    box-sizing:border-box;
+    padding: 10px 0;
+    margin: 0;
+    width: 100%;
+}
+.passwordIcon {
+    width: 100%;
+   
+	position: relative;
+}
+.passwordIcon input{
+    width: 100%;
+}
+.password-control {
+	position: absolute;
+	top: 11px;
+	right: 2%;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	
+}
+.password-control.view {
+	/* background: url(/no-view.svg) 0 0 no-repeat; */
+}
+.block.buttonLine input:hover{
+    background-color: #4d42fe;
+}
